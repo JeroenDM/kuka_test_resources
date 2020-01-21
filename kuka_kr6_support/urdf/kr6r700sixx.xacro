@@ -1,6 +1,17 @@
 <?xml version="1.0" ?>
 
 <robot name="kuka_kr6r700sixx" xmlns:xacro="http://wiki.ros.org/xacro">
+
+  <link name="world"/>
+
   <xacro:include filename="$(find kuka_kr6_support)/urdf/kr6r700sixx_macro.xacro"/>
   <xacro:kuka_kr6r700sixx prefix=""/>
+
+  <!-- Move base link to random pose in the world frame. -->
+  <!-- This improves the test coverage of kinematics packages. -->
+  <joint name="world_to_base_link" type="fixed">
+    <origin xyz="0.1 -0.2 0.3" rpy="${10 * DEG2RAD} ${-20 * DEG2RAD} ${30 * DEG2RAD}"/>
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
 </robot>
