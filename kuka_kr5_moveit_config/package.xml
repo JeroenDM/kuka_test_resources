@@ -30,6 +30,7 @@
   <!-- <run_depend>warehouse_ros_mongo</run_depend> -->
   <build_depend>kuka_kr5_support</build_depend>
   <run_depend>kuka_kr5_support</run_depend>
+  <run_depend>moveit_opw_kinematics_plugin</run_depend>
 
 
 </package>
