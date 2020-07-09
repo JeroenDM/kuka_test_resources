@@ -121,7 +121,8 @@ planner_configs:
     dense_delta_fraction: 0.001  # delta fraction for interface detection. default: 0.001
     max_failures: 5000  # maximum consecutive failure limit. default: 5000
 manipulator:
-  default_planner_config: None
+  default_planner_config: RRTConnect
+  enforce_joint_model_state_space: true 
   planner_configs:
     - SBL
     - EST
