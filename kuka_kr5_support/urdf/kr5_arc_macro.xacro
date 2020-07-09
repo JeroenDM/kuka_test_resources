@@ -5,7 +5,7 @@
     <!-- LINKS -->
     <!-- base link -->
     <link name="${prefix}base_link">
-      <inertial>
+      <!-- <inertial>
         <origin xyz="-0.017519394031846 8.11394768450848E-07 0.0975924044854325"
                 rpy="0 0 0" />
         <mass value="7.58585707666653" />
@@ -16,7 +16,7 @@
             iyy="0.0584309411563095"
             iyz="-4.8990117845347E-07"
             izz="0.0514875586171667" />
-      </inertial>
+      </inertial> -->
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
